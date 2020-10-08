@@ -1,0 +1,280 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1E1E1E;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo{
+    width: 70px;
+}
+
+.navbar{
+    list-style: none;
+    
+    display: flex;
+    text-transform: uppercase;
+    
+}
+
+.navbar li a{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #828282;
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover{
+    color: #d7d7d7;
+}
+
+.website_icon{
+    width: 17px;
+    margin-left: 25px;
+}
+
+.intro{
+    display: flex;
+}
+
+.section_1_img{
+    width: 300px;
+    position: absolute;
+}
+
+.section_1_caption{
+    font-family: 'Metropolis', sans-serif;
+    color: #FFBE00;
+    font-size: 60px;
+    margin-right: auto;
+}
+
+.intro{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 140px;
+    align-items: center;
+    position: relative;
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+    margin-bottom: 100px;
+}
+
+.section_title{
+    color: #FFBE00;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.project_img{
+    width: 530px;
+    height:350px;
+}
+
+.project_ltr{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.project_rtl{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.project_ltr_des{
+    margin-left: 30px;
+}
+
+.project_rtl_des{
+    margin-right: 30px;
+}
+
+.project_type{
+    color: #FFBE00;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.project_name{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+
+.project_des{
+    color: #828282;
+}
+
+.project_more{
+    color: #FFBE00;
+}
+
+.discover_more{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.discover_more_txt{
+    color: #828282;
+}
+
+.github_txt{
+    color: white;
+}
+
+.discover_more img{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.about{
+    margin-bottom: 150px;
+}
+
+.services_container{
+    display: flex;
+    margin-top: 100px;
+}
+
+.srv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.srv_image{
+    width: 80px;
+}
+
+.srv_title{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.srv{
+    color: #828282;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.srv_image_dev{
+    padding-bottom: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+label{
+    color: white;
+}
+
+textarea, input{
+    background-color: #2A2A2A;
+    margin-bottom: 25px;
+    padding: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    resize: none;
+    font-size: 16px;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+#message{
+    height: 200px;
+}
+
+input:focus{
+    outline: none;
+    background-color: #353535;
+}
+
+textarea:focus{
+    outline: none;
+    background-color: #353535;
+}
+
+#submit_button{
+    background-color: transparent;
+    border: solid 1px #FFBE00;
+    padding: 15px;
+    width: 150px;
+    border-radius: 3px;
+    color: #FFBE00;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: auto;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow .3s ease-in-out;
+    cursor: pointer;
+}
+
+#submit_button:focus{
+    outline: none;
+    
+}
+
+#submit_button:hover{
+    -moz-box-shadow:    inset 0 0 0px 1px #FFBE00;
+    -webkit-box-shadow: inset 0 0 0px 1px #FFBE00;
+    box-shadow:         inset 0 0 0px 1px #FFBE00;
+}
+
+.contact .section_title{
+    margin-bottom: 70px;
+}
+
+.abt_image{
+    width:150px;
+    border-radius: 50%;
+}
+
+@media (min-width: 1024px){
+    body{
+        width: 1024px;
+    }
+}
