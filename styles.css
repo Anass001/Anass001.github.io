@@ -278,3 +278,21 @@ textarea:focus{
         width: 1024px;
     }
 }
+
+@media screen and (max-width: 768px){
+    .navbar, .websites{
+        display: none;
+    }
+
+    .intro{
+        flex-direction: column;
+    }
+
+    .section_1_img{
+        position: relative;
+    }
+
+    .project_ltr, .project_rtl{
+        flex-direction: column;
+    }
+}
