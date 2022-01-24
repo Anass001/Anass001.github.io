@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeneo</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
     <header>
-        <img class="logo" src="src/logo2.png">
+        <img class="logo" src="src/logo2.png" />
         <ul class="navbar">
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">Team</a></li>
@@ -22,105 +23,202 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="websites">
-            <img class="website_icon" src="src/dribble_icon.png">
-            <img class="website_icon" src="src/linkedin_icon.png">
-            <img class="website_icon" src="src/github_icon.png">
+            <img class="website_icon" src="src/dribble_icon.png" />
+            <img class="website_icon" src="src/linkedin_icon.png" />
+            <img class="website_icon" src="src/github_icon.png" />
+        </div>
+        <button id="nav-toggle-btn">
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5 5.75C15.5 5.33579 15.1642 5 14.75 5H0.75C0.335786 5 0 5.33579 0 5.75C0 6.16421 0.335786 6.5 0.75 6.5H14.75C15.1642 6.5 15.5 6.16421 15.5 5.75Z"
+                    fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5 0.75C15.5 0.335786 15.1642 0 14.75 0H0.75C0.335786 0 0 0.335786 0 0.75C0 1.16421 0.335786 1.5 0.75 1.5H14.75C15.1642 1.5 15.5 1.16421 15.5 0.75Z"
+                    fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5 10.75C15.5 10.3358 15.1642 10 14.75 10H0.75C0.335786 10 0 10.3358 0 10.75C0 11.1642 0.335786 11.5 0.75 11.5H14.75C15.1642 11.5 15.5 11.1642 15.5 10.75Z"
+                    fill="white" />
+            </svg>
+
+        </button>
+        <div id="mobile-nav" class="mobile-nav">
+            <nav class="mobile-sidenav">
+                <div class="close">
+                    <button id="nav-close-btn">
+                        <svg width="34" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.46445 15.5354L15.5355 8.46436" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                          <path d="M8.46446 8.46458L15.5355 15.5356" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="sidenav-list">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">Team</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="side-websites">
+                    <img class="website_icon" src="src/dribble_icon.png" />
+                    <img class="website_icon" src="src/linkedin_icon.png" />
+                    <img class="website_icon" src="src/github_icon.png" />
+                </div>
+            </nav>
         </div>
     </header>
     <section class="intro">
-        <h1 class="section_1_caption">We're two enthusiastic <br>developers from <br>Tangier, Morocco.</h1>
-        <img class="section_1_img" src="src/my_pic.png">
+        <h1 class="section_1_caption">
+            We're two enthusiastic <br />developers from <br />Tangier, Morocco.
+        </h1>
+        <img class="section_1_img" src="src/my_pic.png" />
     </section>
     <section class="projects" id="projects">
         <p class="section_title">Projects</p>
         <div class="project_ltr">
-            <img class="project_img" src="src/chatly.png">
-            <div class="project_ltr_des">
+            <img class="project_img" src="src/chatly.png" />
+            <div class="project_details project_ltr_des">
                 <p class="project_type">Web application</p>
                 <p class="project_name">Chatly</p>
-                <p class="project_des">Chatly is an intelligent and secure communications tool. From direct messages to
-                    chat rooms, Chatly provides an integrated platform that makes communication easy and efficient.</p>
-                <p class="project_more">Learn More ≫</p>
+                <p class="project_des">
+                    Chatly is an intelligent and secure communications tool. From direct
+                    messages to chat rooms, Chatly provides an integrated platform that
+                    makes communication easy and efficient.
+                </p>
+                <a href="#" class="project_more">
+                    <span>Learn More </span>
+                    <svg width="9" height="13" viewBox="0 0 7 10" fill="#FFBE00" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.03033 4.46967C6.32322 4.76256 6.32322 5.23744 6.03033 5.53033L2.03033 9.53033C1.73744 9.82322 1.26256 9.82322 0.96967 9.53033C0.676777 9.23744 0.676777 8.76256 0.96967 8.46967L4.43934 5L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967Z"
+                            fill="black" />
+                    </svg>
+                </a>
             </div>
         </div>
         <div class="project_rtl">
-            <div class="project_rtl_des">
+            <div class="project_details project_rtl_des">
                 <p class="project_type">Mobile application</p>
                 <p class="project_name">Photo Editor Pro</p>
-                <p class="project_des">Photo Editor Pro is a free picture editor and graphic designer, allowing you to
-                    use photo editing tools, such as add filters, frames, text, stickers and effects. and apply design
-                    tools to make creative photo designs and graphics.</p>
-                <p class="project_more">Learn More ≫</p>
+                <p class="project_des">
+                    Photo Editor Pro is a free picture editor and graphic designer,
+                    allowing you to use photo editing tools, such as add filters,
+                    frames, text, stickers and effects. and apply design tools to make
+                    creative photo designs and graphics.
+                </p>
+                <a href="#" class="project_more">
+                    <span>Learn More </span>
+                    <svg width="9" height="13" viewBox="0 0 7 10" fill="#FFBE00" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.03033 4.46967C6.32322 4.76256 6.32322 5.23744 6.03033 5.53033L2.03033 9.53033C1.73744 9.82322 1.26256 9.82322 0.96967 9.53033C0.676777 9.23744 0.676777 8.76256 0.96967 8.46967L4.43934 5L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967Z"
+                            fill="black" />
+                    </svg>
+                </a>
             </div>
-            <img class="project_img" src="src/photo_editor.png">
+            <img class="project_img" src="src/photo_editor.png" />
         </div>
         <div class="project_ltr">
-            <img class="project_img" src="src/movies.png">
-            <div class="project_ltr_des">
+            <img class="project_img" src="src/movies.png" />
+            <div class="project_details project_ltr_des">
                 <p class="project_type">Mobile application</p>
                 <p class="project_name">Movies & TV Shows Tracker</p>
-                <p class="project_des">modern and minimalist app that let you track, organize and manage custom movie
-                    lists easily.</p>
-                <p class="project_more">Learn More ≫</p>
+                <p class="project_des">
+                    modern and minimalist app that let you track, organize and manage
+                    custom movie lists easily.
+                </p>
+                <a href="#" class="project_more">
+                    <span>Learn More </span>
+                    <svg width="9" height="13" viewBox="0 0 7 10" fill="#FFBE00" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.03033 4.46967C6.32322 4.76256 6.32322 5.23744 6.03033 5.53033L2.03033 9.53033C1.73744 9.82322 1.26256 9.82322 0.96967 9.53033C0.676777 9.23744 0.676777 8.76256 0.96967 8.46967L4.43934 5L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967Z"
+                            fill="black" />
+                    </svg>
+                </a>
             </div>
+        </div>
+        <div class="project_rtl">
+            <div class="project_details project_rtl_des">
+                <p class="project_type">Web application</p>
+                <p class="project_name">FabManager</p>
+                <p class="project_des">
+                    Fab-Manager is the FabLab management solution. It provides a comprehensive, web-based, open-source tool to simplify your administrative tasks and your marker's projects.
+                </p>
+                <a href="#" class="project_more">
+                    <span>Learn More </span>
+                    <svg width="9" height="13" viewBox="0 0 7 10" fill="#FFBE00" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.96967 0.46967C1.26256 0.176777 1.73744 0.176777 2.03033 0.46967L6.03033 4.46967C6.32322 4.76256 6.32322 5.23744 6.03033 5.53033L2.03033 9.53033C1.73744 9.82322 1.26256 9.82322 0.96967 9.53033C0.676777 9.23744 0.676777 8.76256 0.96967 8.46967L4.43934 5L0.96967 1.53033C0.676777 1.23744 0.676777 0.762563 0.96967 0.46967Z"
+                            fill="black" />
+                    </svg>
+                </a>
+            </div>
+            <img class="project_img" src="src/fablab.png" />
         </div>
         <div class="discover_more">
             <p class="discover_more_txt">Discover all projects on</p>
-            <img class="github_logo" src="src/github_white.png">
+            <img class="github_logo" src="src/github_white.png" />
             <p class="github_txt">GitHub</p>
         </div>
     </section>
     <section class="about" id="about">
         <p class="section_title">Team</p>
         <div class="services_container">
-            <div class="srv">
-                <img class="abt_image" src="src/team_member_1.jpg">
-                <p class="srv_title">Anas Lamaiz</p>
-                <p class="srv_des">In publishing and graphic design, Lorem ipsum
-                    is a placeholder text commonly used to
-                    demonstrate the visual form of a document or
-                    a typeface without relying on meaningful
-                    content.</p>
+            <div class="col">
+                <div class="srv">
+                    <img class="abt_image" src="src/team_member_1.jpg" />
+                    <p class="srv_title">Anas Lamaiz</p>
+                    <p class="srv_des">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text
+                        commonly used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content.
+                    </p>
+                </div>
             </div>
-            <div class="srv">
-                <img class="abt_image" src="src/team_member_2.jpg">
-                <p class="srv_title">Mohammed Ezzaoui</p>
-                <p class="srv_des">In publishing and graphic design, Lorem ipsum
-                    is a placeholder text commonly used to
-                    demonstrate the visual form of a document or
-                    a typeface without relying on meaningful
-                    content.</p>
+            <div class="col">
+                <div class="srv">
+                    <img class="abt_image" src="src/team_member_2.jpg" />
+                    <p class="srv_title">Mohammed Ezzaoui</p>
+                    <p class="srv_des">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text
+                        commonly used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content.
+                    </p>
+                </div>
             </div>
+
         </div>
     </section>
     <section class="services" id="services">
         <p class="section_title">Services</p>
         <div class="services_container">
-            <div class="srv">
-                <img class="srv_image" src="src/des.svg">
-                <p class="srv_title">User Interface &<br>Experience Design</p>
-                <p class="srv_des">In publishing and graphic design, Lorem ipsum
-                    is a placeholder text commonly used to
-                    demonstrate the visual form of a document or
-                    a typeface without relying on meaningful
-                    content.</p>
+            <div class="col">
+                <div class="srv">
+                    <img class="srv_image" src="src/des.svg" />
+                    <p class="srv_title">User Interface &<br />Experience Design</p>
+                    <p class="srv_des">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text
+                        commonly used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content.
+                    </p>
+                </div>
             </div>
-            <div class="srv">
-                <img class="srv_image srv_image_dev" src="src/dev.svg">
-                <p class="srv_title">Web & Mobile<br>Developement</p>
-                <p class="srv_des">In publishing and graphic design, Lorem ipsum
-                    is a placeholder text commonly used to
-                    demonstrate the visual form of a document or
-                    a typeface without relying on meaningful
-                    content.</p>
+            <div class="col">
+                <div class="srv">
+                    <img class="srv_image srv_image_dev" src="src/dev.svg" />
+                    <p class="srv_title">Web & Mobile<br />Developement</p>
+                    <p class="srv_des">
+                        In publishing and graphic design, Lorem ipsum is a placeholder text
+                        commonly used to demonstrate the visual form of a document or a
+                        typeface without relying on meaningful content.
+                    </p>
+                </div>
             </div>
+
+
         </div>
     </section>
     <section class="contact" id="contact">
         <p class="section_title">Contact</p>
         <form>
-            <input type="text" id="name" name="name" placeholder="Name"><br>
-            <input type="email" id="email" name="email" placeholder="Email"><br>
+            <input type="text" id="name" name="name" placeholder="Name" /><br />
+            <input type="email" id="email" name="email" placeholder="Email" /><br />
             <textarea id="message" name="message" placeholder="Message"></textarea>
         </form>
         <button id="submit_button">Submit</button>
