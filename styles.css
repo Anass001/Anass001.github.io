@@ -57,7 +57,7 @@ header{
 }
 
 .section_1_caption{
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #FFBE00;
     font-size: 60px;
     margin-right: auto;
@@ -122,6 +122,7 @@ header{
 }
 
 .project_name{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 30px;
     margin: 0;
@@ -177,6 +178,7 @@ header{
 }
 
 .srv_title{
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 24px;
     font-weight: 500;
